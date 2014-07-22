@@ -3,7 +3,6 @@
 # 
 # Parameters: only the PDF filename.
 #
-# Requirements: ImageMagick Convert, RAR and PDFTK
 #
 echo "Creating PDF directory..."
 mkdir $1_pages
