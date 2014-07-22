@@ -23,16 +23,16 @@ do
 	convert -density 100x100 $file $file.jpg
 	rm -f $file
 	let PAGE_COUNT--
-	echo "$PAGE_COUNT pages left."
 done
 
 for file in *.jpg
 do
 	mv $file ${file%pdf.*}jpg
 done
+
 echo "Creating RAR file..."
 rar a $1.rar *.jpg
-echo "Renaming RAR to CBR format..."
+echo "RAR to CBR format..."
 mv $1.rar ../$1.cbr
 echo "Removing the garbage..."
 cd ..
