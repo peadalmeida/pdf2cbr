@@ -37,9 +37,5 @@ mv $1.rar ../$1.cbr
 echo "Removendo lixo"
 cd ..
 rm -Rf $1_pages
-if [ -e $1.cbr ]
-then
-echo "File $1.cbr generated."
-fi
 
 echo "Pronto! Boa leitura!"
