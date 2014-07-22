@@ -41,7 +41,6 @@ echo "Removendo lixo"
 cd ..
 rm -Rf $1_pages
 
-<<<<<<< HEAD
 echo "Pronto! Boa leitura!"
 echo "Done!"
 
