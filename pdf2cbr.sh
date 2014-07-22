@@ -1,9 +1,7 @@
 #!/bin/sh
-#
-# 
-# Parameters: only the PDF filename.
-#
-#
+# PDF2CBR
+# by: @pedroaugusto
+
 echo "Creating PDF directory..."
 mkdir $1_pages
 cd $1_pages
@@ -23,13 +21,13 @@ do
 	convert -density 100x100 $file $file.jpg
 	rm -f $file
 	let PAGE_COUNT--
-	echo "$PAGE_COUNT pages left."
 done
 
 for file in *.jpg
 do
 	mv $file ${file%pdf.*}jpg
 done
+
 echo "Creating RAR file..."
 rar a $1.rar *.jpg
 echo "Renaming RAR to CBR format..."
