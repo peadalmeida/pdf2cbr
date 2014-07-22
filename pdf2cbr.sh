@@ -1,8 +1,10 @@
 #!/bin/sh
+#
 # PDF2CBR
 # by: @pedroaugusto
+#
 
-echo "Creating PDF directory..."
+echo "Criando diretório PDF..."
 mkdir $1_pages
 cd $1_pages
 pdftk ../$1 burst
@@ -14,7 +16,7 @@ if [ -e doc_data.txt ]
 fi
 
 PAGE_COUNT=`ls | wc -l`
-echo "Converting the pages to JPEG"
+echo "Convertendo páginas para JPEG"
 
 for file in *.pdf
 do
@@ -28,12 +30,16 @@ do
 	mv $file ${file%pdf.*}jpg
 done
 
-echo "Creating RAR file..."
+echo "Criando arquivo RAR"
 rar a $1.rar *.jpg
-echo "Renaming RAR to CBR format..."
+echo "Renomeando arquivo RAR para CBR"
 mv $1.rar ../$1.cbr
-echo "Removing the garbage..."
+echo "Removendo lixo"
 cd ..
 rm -Rf $1_pages
+if [ -e $1.cbr ]
+then
+echo "File $1.cbr generated."
+fi
 
-echo "Done!"
+echo "Pronto! Boa leitura!"
