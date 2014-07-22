@@ -30,15 +30,12 @@ do
 	mv $file ${file%pdf.*}jpg
 done
 
-<<<<<<< HEAD
 echo "Criando arquivo RAR"
 rar a $1.rar *.jpg
 echo "Renomeando arquivo RAR para CBR"
-=======
 echo "Creating RAR file..."
 rar a $1.rar *.jpg
 echo "RAR to CBR format..."
->>>>>>> c02cfbe396475f5eed060fc307438983514138bc
 mv $1.rar ../$1.cbr
 echo "Removendo lixo"
 cd ..
@@ -46,6 +43,5 @@ rm -Rf $1_pages
 
 <<<<<<< HEAD
 echo "Pronto! Boa leitura!"
-=======
 echo "Done!"
->>>>>>> c02cfbe396475f5eed060fc307438983514138bc
+
