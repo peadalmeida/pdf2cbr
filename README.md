@@ -1,6 +1,6 @@
 #PDF2CBR
 
-Script de conversão de formatos simples que adaptei para converter quadrinhos/mangás digitais de .pdf para .cbr para visualização em leitores próprios pra Linux.
+Script de conversão de formatos simples que adaptei para converter quadrinhos/mangás digitais de .pdf para .cbr para visualização em leitores próprios pra GNU/Linux.
 
 
 #Author
