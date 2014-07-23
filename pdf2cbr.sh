@@ -10,6 +10,7 @@ cd $1_pages
 pdftk ../$1 burst
 
 
+#Removendo arquivos de texto criados por padrão pelo pdftk
 if [ -e doc_data.txt ]
 	then
 	rm -f doc_data.txt
