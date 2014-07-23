@@ -42,5 +42,3 @@ cd ..
 rm -Rf $1_pages
 
 echo "Pronto! Boa leitura!"
-echo "Done!"
-
