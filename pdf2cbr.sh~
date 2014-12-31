@@ -3,7 +3,6 @@
 # PDF2CBR
 # by: @pedroaugusto
 #
-#
 
 echo "Criando diretório PDF..."
 mkdir $1_pages
