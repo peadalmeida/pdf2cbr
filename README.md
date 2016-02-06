@@ -1,16 +1,29 @@
-#PDF2CBR
+# pdf2cbr
 
-Script de conversão de formatos simples que adaptei para converter quadrinhos/mangás digitais de .pdf para .cbr para visualização em leitores próprios pra GNU/Linux.
+shell script to convert .pdf digital comics to .cbr.
 
+<img src = "http://i.imgur.com/czSQxOS.png" width="210">
 
-#Author
-* Pedro Augusto Duarte de Almeida (@pedroaugusto)
+## Dependencies
+* ImageMagick
 
-#Dependências
-* ImageMagick Convert (`sudo apt-get install imagemagick`)
-* RAR (`sudo apt-get install RAR`)
-* PDFTK (`sudo apt-get install pdftk`)
+`sudo apt-get install imagemagick`
 
-#Como utilizar
-* Permissão de execução (`sudo chmod +x ./pdf2cbr.sh`)
-* Apenas o arquivo PDF como parâmetro (`./pdf2cbr.sh <arquivo.pdf>`)
+* RAR
+
+`sudo apt-get install rar`
+
+* PDFTK
+
+`sudo apt-get install pdftk`
+
+## Usage
+* Make it executable
+
+`sudo chmod +x ./pdf2cbr.sh`
+
+* Just the .pdf file as parameter
+
+`./pdf2cbr <file.pdf>`
+
+* Done! :sparkles:
